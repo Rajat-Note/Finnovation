@@ -11,7 +11,7 @@ interface serviceProps {
 export const ProfileCard = ({ service }: serviceProps) => {
     const { source, name, flag, desc } = service;
     return ( 
-        <div className="w-[40%] h-full bg-[#f3ffd9] rounded-2xl flex flex-col gap-6 justify-center items-start px-8 py-8">
+        <div className="min-w-[100%] md:min-w-[30%] h-full bg-[#f3ffd9] rounded-2xl flex flex-col gap-6 justify-center items-start px-8 py-8">
             <p className="text-gray-500 font-semibold">&quot;${desc}&quot;</p>
             <div className="flex justify-center items-center gap-2">
                 <div className="rounded-full  overflow-hidden">

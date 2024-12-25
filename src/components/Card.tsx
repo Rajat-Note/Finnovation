@@ -11,7 +11,7 @@ interface serviceProps {
 export const Card = ({ service }: serviceProps) => {
     const { source, title, desc } = service;
     return ( 
-        <div className="rounded-2xl shadow-sm shadow-[#f5f8fc] bg-white w-[30%] h-full flex flex-col gap-8 justify-center items-center px-2 py-8">
+        <div className="rounded-2xl shadow shadow-[#f5f8fc] hover:shadow-[#c0bebe] transition duration-700 hover:-translate-y-2 bg-white w-[100%] lg:w-[30%] md:w-[45%] h-full flex flex-col gap-8 justify-center items-center px-2 py-8">
             <div className="rounded-full bg-[#f5f8fc] overflow-hidden">
                 <Image
                     src={source}

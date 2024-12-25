@@ -5,13 +5,14 @@ interface serviceProps {
         source: string,
         title: string,
         desc: string,
+        animDirection: string,
     }
 }
 
 export const RectCard = ({ service }: serviceProps) => {
-    const { source, title, desc } = service;
+    const { source, title, desc, animDirection } = service;
     return ( 
-        <div className="rounded-2xl w-full h-full flex gap-4 justify-center items-center px-2 py-2">
+        <div className={`rounded-2xl w-full h-full flex gap-4 justify-center items-center px-2 py-2 ${animDirection === 'right' ?  "animeRight" : "animeLeft"}`}>
             <div className="rounded-full bg-[#f3ffd9] overflow-hidden">
                 <Image
                     src={source}
