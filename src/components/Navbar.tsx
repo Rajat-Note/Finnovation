@@ -75,7 +75,7 @@ export const Navbar = () => {
               </div>
           </div>
           <div 
-            className={`${click ? `md:hidden ${isScrolled ? "fixed bg-white w-full top-[11%] z-50": "absolute top-[200%] w-full bg-white border border-gray-200 shadow-lg"} `: "hidden"}`}
+            className={`${click ? `md:hidden ${isScrolled ? "fixed bg-white w-full top-[11%] left-0 z-50": "absolute top-[200%] w-full bg-white border border-gray-200 shadow-lg"} `: "hidden"}`}
           >
             <a
               href="#"
